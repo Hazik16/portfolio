@@ -108,7 +108,8 @@ const contactDetails = [
   },
   {
     label: "LinkedIn",
-    value: "Add LinkedIn URL later",
+    value: "linkedin.com/in/hazik-nabi",
+    href: "https://www.linkedin.com/in/hazik-nabi",
   },
   {
     label: "Location",
