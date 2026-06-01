@@ -40,27 +40,19 @@ const projects = [
       "A deployed Next.js project built using GitHub and Vercel, focused on development proof, project-based learning, and deployment practice.",
     proof: "GitHub workflow, Vercel deployment, and project-based learning.",
     tags: ["Next.js", "GitHub", "Vercel"],
-    href: "#",
-  },
-  {
-    title: "Rental Management System",
-    type: "App System Concept",
-    description:
-      "A mobile app concept for landlords and tenants with rent tracking, deposit management, rent notifications, payment records, and tenant assistance requests.",
-    proof:
-      "Product thinking, feature planning, and app architecture awareness.",
-    tags: ["React Native", "App Design", "System Planning"],
-    href: "#",
+    href: "https://devproof-ai-three.vercel.app/",
+    buttonText: "View Project",
+    isExternal: true,
   },
   {
     title: "SmartBento",
-    type: "AI Business Concept",
+    type: "Marketing & Business Concept",
     description:
-      "An AI-driven personalized lunch box subscription business concept for urban Malaysians, combining food technology, personalization, and startup planning.",
+      "A food-tech marketing and business concept for personalized lunch box subscriptions in Malaysia, focused on customer targeting, brand positioning, and startup planning.",
     proof:
-      "AI product thinking, personalization logic, and business planning.",
-    tags: ["AI Concept", "Business Planning", "Food Tech"],
-    href: "#",
+      "Marketing strategy, business planning, product positioning, and AI-assisted concept development.",
+    tags: ["Marketing", "Business Planning", "Food Tech"],
+    buttonText: "Coming Soon",
   },
   {
     title: "Card & Wallet Spend Intelligence",
@@ -70,7 +62,7 @@ const projects = [
     proof:
       "Data analytics thinking, customer profiling, and machine learning use-case design.",
     tags: ["Data Analytics", "Fintech", "Machine Learning"],
-    href: "#",
+    buttonText: "Coming Soon",
   },
 ];
 
@@ -163,7 +155,7 @@ export default function Home() {
             Hazik Nabi
           </h1>
           <p className="mt-8 max-w-3xl text-2xl font-medium leading-tight text-neutral-100 sm:text-4xl">
-            AI student building practical software systems.
+            AI & Software Developer building practical software systems.
           </p>
           <p className="mt-7 max-w-2xl text-base leading-8 text-neutral-400 sm:text-lg">
             I am focused on machine learning, web development, deployment
@@ -202,7 +194,7 @@ export default function Home() {
         number="02"
         label="Stack"
         title="Current Stack"
-        intro="A working inventory of the languages, frameworks, AI concepts, and deployment tools I am using to turn study into shipped proof."
+        intro="A working inventory of the languages, frameworks, AI concepts, and deployment tools I am using to turn ideas into shipped proof."
       >
         <div className="grid gap-px overflow-hidden border border-white/10 bg-white/10 md:grid-cols-2 lg:grid-cols-4">
           {stackGroups.map((group) => (
@@ -275,12 +267,20 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
-                <a
-                  href={project.href}
-                  className="mt-auto inline-flex h-11 w-fit items-center justify-center border border-white/20 px-5 text-sm font-semibold text-white transition-colors hover:border-white hover:bg-white hover:text-neutral-950"
-                >
-                  View Project
-                </a>
+                {project.href ? (
+                  <a
+                    href={project.href}
+                    target={project.isExternal ? "_blank" : undefined}
+                    rel={project.isExternal ? "noreferrer" : undefined}
+                    className="mt-auto inline-flex h-11 w-fit items-center justify-center border border-white/20 px-5 text-sm font-semibold text-white transition-colors hover:border-white hover:bg-white hover:text-neutral-950"
+                  >
+                    {project.buttonText}
+                  </a>
+                ) : (
+                  <span className="mt-auto inline-flex h-11 w-fit items-center justify-center border border-white/10 px-5 text-sm font-semibold text-neutral-500">
+                    {project.buttonText}
+                  </span>
+                )}
               </div>
             </article>
           ))}
