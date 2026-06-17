@@ -45,6 +45,18 @@ const projects = [
     isExternal: true,
   },
   {
+    title: "Dream Language Centre",
+    type: "Live Website",
+    description:
+      "A live website for Dream Language Centre, focused on presenting the centre online with a clean public-facing web presence.",
+    proof:
+      "Real website delivery, responsive layout, deployment, and public project publishing.",
+    tags: ["Website", "Responsive Design", "Deployment"],
+    href: "https://dreamlanguagecentre.com/",
+    buttonText: "View Project",
+    isExternal: true,
+  },
+  {
     title: "SmartBento",
     type: "Marketing & Business Concept",
     description:
