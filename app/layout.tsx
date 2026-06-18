@@ -49,8 +49,7 @@ export const metadata: Metadata = {
       "Personal portfolio for Hazik Nabi, an AI and software developer based in Kuala Lumpur, Malaysia.",
   },
   verification: {
-    // Replace "YOUR_GOOGLE_VERIFICATION_CODE_HERE" with your actual token from Google Search Console when ready
-    google: "YOUR_GOOGLE_VERIFICATION_CODE_HERE",
+    google: "d-_jW5hN7Ws8FSshab15PyFXVfErxcLlsI5xaNvTx1E",
   },
   robots: {
     index: true,
