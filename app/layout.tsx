@@ -49,7 +49,7 @@ export const metadata: Metadata = {
       "Personal portfolio for Hazik Nabi, an AI and software developer based in Kuala Lumpur, Malaysia.",
   },
   verification: {
-    google: "d-_jW5hN7Ws8FSshab15PyFXVfErxcLlsI5xaNvTx1E",
+    google: "8lSkz-um2gg7KpHq6cvzL3i5bKMdzOUbpYUrqqMxh8k",
   },
   robots: {
     index: true,
