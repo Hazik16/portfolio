@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Hazik Nabi" }],
   creator: "Hazik Nabi",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://portfolio-hazik16.vercel.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://hazik.life"),
   alternates: {
     canonical: "/",
   },
@@ -69,7 +69,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://portfolio-hazik16.vercel.app";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hazik.life";
 
   const jsonLd = {
     "@context": "https://schema.org",
